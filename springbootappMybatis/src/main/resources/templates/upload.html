@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>我的第一个 HTML 页面</title>
+</head>
+
+<body>
+<form action="/test/import" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td></td>
+            <td><h1>文件上传</h1></td>
+        </tr>
+        <tr>
+            <td>文件描述:</td>
+            <td><input type="text" name="desc"/></td>
+        </tr>
+        <tr>
+            <td>上传文件:</td>
+            <td><input type="file" name="file"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="上传文件"/></td>
+        </tr>
+    </table>
+</form>
+<tr>
+     <td><a href="#"  onclick="downloadfile();">数据导出</a></td>
+
+</tr>
+</body>
+<script>
+function downloadfile(){
+	window.location.href="/test/getExcel";
+}
+</script>
+</html>
